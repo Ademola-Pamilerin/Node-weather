@@ -1,0 +1,30 @@
+body{
+    text-align: center;
+    margin: auto;
+    color: green;
+} 
+h1{
+color: red;
+}
+img{
+    width: 120px;
+    height: 110px;
+}
+a{
+text-decoration: none;
+display: inline-block;
+padding: 10px;    
+}
+hr{
+    width: 100vh;
+}
+input{
+    border: 2px solid black;
+}
+button{
+    background-color: aliceblue;
+}
+button:hover{
+    background-color: pink;
+    
+}
