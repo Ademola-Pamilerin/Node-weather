@@ -3,7 +3,7 @@ const path=require('path');
 const app=express();
 const Caller=require('./Caller');
 const hbs=require('hbs');
-
+let port=process.env.PORT||3000;
 //Defining Paths
 const dir=path.join(__dirname,'../Public');
 const dir2=path.join(__dirname,'../Templates/views');
@@ -83,6 +83,6 @@ app.get('*',(req,res)=>{
 });
 //app.com
 //app.com/help
-app.listen(3000,()=>{
+app.listen(port,()=>{
     console.log('started on port 3000');
 });
