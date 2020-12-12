@@ -1,11 +1,16 @@
-const Weather=document.querySelector('form');
-const value=document.querySelector('input');
+let Weather=document.querySelector('form');
+let value=document.querySelector('input');
 let output=document.querySelector('.values1');
-Weather.addEventListener('submit',(e)=>{
+Weather.addEventListener('submit',e=>{
     e.preventDefault();
     output.innerHTML="Loading";
 let input=null; 
 input=value.value;
+if(input.length<=0){
+    output.innerHTML="Please input something";
+
+}
+else{
 let template='loading';
 fetch("/weather?search="+input)
 .then(response=>{
@@ -22,4 +27,5 @@ fetch("/weather?search="+input)
         }
     });
 });
+}
 });
