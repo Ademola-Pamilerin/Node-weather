@@ -11,12 +11,12 @@ fetch("/weather?search="+input)
 .then(response=>{
     response.json().then(data=>{
         if(data.error){
-            console.log(data.error)
+           // console.log(data.error);
             template=data.error;
             output.innerHTML=template;
         }
         else{
-            console.log(data);
+            //console.log(data);
             template="The current Temperature is "+data.temp_c+",it is "+data.condition.text;
         output.innerHTML=template;
         }

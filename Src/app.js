@@ -84,5 +84,5 @@ app.get('*',(req,res)=>{
 //app.com
 //app.com/help
 app.listen(port,()=>{
-    console.log('started on port 3000');
+    console.log('started on port '+port);
 });
