@@ -8,14 +8,15 @@
     <link rel="stylesheet" href="./Css/index.css">
 </head>
 <body>
+    <div>
     <h1>
         {{>header}}
             </h1>
             <form>
-                <input type="text" placeholder="Somewhere interesting" data-validation-required-message="fill out form"/>
+                <input type="text" placeholder="type a place" />
                 <button>Search</button>
             </form>
-            <h2 class="values1"></h2>
+            <h2 class="values1"> </h2>
             
             <h3><p> Use this site to  get the latest weather information</p></h3>
             <br/>
@@ -23,6 +24,7 @@
             <h2>
                 {{>footer}}
             </h2>
+            </div>
             <script src="./Js/index.js"></script>
 </body>
 </html>

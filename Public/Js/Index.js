@@ -2,6 +2,7 @@ let Weather=document.querySelector('form');
 let value=document.querySelector('input');
 let output=document.querySelector('.values1');
 Weather.addEventListener('submit',e=>{
+    console.log('clicked');
     e.preventDefault();
     output.innerHTML="Loading";
 let input=null; 

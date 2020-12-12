@@ -36,7 +36,6 @@ app.get('/weather',(req,res)=>{
         }
           return  res.send(response);
     });
-    console.log(req.query.search);
     // res.send(
     //     {
     //         temperature:12,
